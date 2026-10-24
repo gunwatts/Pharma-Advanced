@@ -35,8 +35,8 @@ npm run dev                     # http://localhost:5173  (add it to the backend'
 ## Deploying to GitHub Pages
 
 1. Go to **Settings → Pages → Build and deployment → Source** and select **GitHub Actions**.
-2. Go to **Settings → Secrets and variables → Actions → Variables** and add
-   `VITE_API_BASE_URL=https://<pythonanywhere-user>.pythonanywhere.com/api`.
+2. Optional: the build defaults to `https://ayudhas.pythonanywhere.com/api`. To use another API, add the Actions
+   variable `VITE_API_BASE_URL` (**Settings → Secrets and variables → Actions → Variables**).
 3. Push to `main` (or the configured branch), or run **Build and deploy to GitHub Pages** manually.
 4. On the backend, set `CORS_ALLOWED_ORIGINS=https://<github-user>.github.io`.
 
